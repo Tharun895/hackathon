@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+/* navbar */
+.navbar{
+    /* background-color: #87dacd; */
+    background-color: #FFECEF;
+    position: fixed !important; 
+    /* top: 0%; */
+    width: 110%;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* margin-left: 100px; */
+    margin-right: 10px;
+}
+.nav-item{
+    font-size: 20px;
+    font-weight: 500;
+    border: 1px solid #372948;
+    margin-right: 20px;
+    padding: 0px 20px;
+    /* background-color: #076665; */
+    background-color: #372948;
+    border-radius: 10px;
+    height: 45px;
+    align-items: center;
+}
+.navbar-brand{
+    font-weight: 700;
+    vertical-align: bottom;
+    font-variant: small-caps;
+    font-size: 35px !important;
+}
+.nav-menu{
+    display: flex;
+    justify-content: end;
+    max-width: fit-content;
+}
+
+.nav-item a{
+    color: #FFECEF;
+    align-items: center;
+    vertical-align: middle;
+}
+.nav-item:hover{
+    background-color: #FFECEF;
+    color: #372948;
+}
+
+/* home section */
+#home{
+    background-color: #372948e8;
+}
+.dev-intro{
+    color: #FFECEF;
+    font-size: 100px;
+    text-align: center;
+    /* height: 400px; */
+}
+.dev-intro p{
+    margin-top: 150px;
+}
+.dev-intro span{
+    color: aquamarine;
+    font-size: 75px;
+}
+.dev-image svg{
+    width: 500px;
+    height: 500px;
+    align-self: center;
+    margin: auto;
+    margin-left: 10%;
+}
+.line{
+    position: relative;
+    width: 500px;
+    height: 100px;
+    margin-top: 100px;
+    margin-left: 50px;
+    border-right: 2px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    animation: typewriter 4s steps(17) 1s 1 normal both, blinkCursor 500ms steps(17) infinite normal;
+}
+@keyframes typewriter{
+    from{
+        width : 0px;
+    }
+    to{
+        width: 100%;
+    }
+}
+@keyframes blinkCursor{
+    from{
+        border-right-color: orange;
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+
+/* about */
+#about{
+    background-color: #372948;
+    padding-top: 20px;
+}
+#about p span{
+    color: rgb(214, 250, 122);
+    font-size: 40px;
+}
+#about .row .col, #projects .row .col{
+    display: flex;
+    justify-content:center;
+}
+#about .name{
+    color: rgb(255, 217, 0);
+    font-size: 25px;
+}
+#about h1, #projects h1, #contact h1{
+    color: #FFECEF;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+    color: aquamarine;
+    padding: 20px;
+}
+#contact h1{
+    margin-bottom: 50px;
+}
+.intro{
+    color: #FFECEF;
+    align-items: center;
+    width: 35vw;
+    font-size: 20px;
+    margin-top: 15%;
+    text-align: center;
+    margin-right: 200px;
+}
+.mine_pic{
+    align-self: center;
+    margin: auto;
+}
+#about .skills .card{
+    background-color: #836f9b81;
+    padding: 20px;
+    box-shadow: 1px 1px 25px 5px rgb(104, 2, 168);
+}
+.skills, .project{
+    padding: 50px;
+}
+.card-img-top{
+    width: 100px;
+    height: 250px;
+}
+#about .card-text{
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+}
+
+/* contact me */
+#contact{
+    background-color: #372948;
+    padding-bottom: 25px;
+}
+.email-contact, .phone-contact, .address-contact{
+    width: 400px;
+    height: 50px;
+    background-color: #836f9b;
+    color: #FFECEF;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.email-contact svg, .phone-contact svg, .address-contact svg{
+    margin-right: 20px;
+}
+.email-contact{
+    float: right;
+}
+.phone-contact{
+    float: left;
+}
+.address-contact{
+    margin: auto !important;
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+}
+.social-icon-container{
+    /* background-color: blue; */
+    text-align: center;
+    margin-top: 50px;
+}
+.social-icon-container hr{
+    color: #FFECEF;
+    margin-bottom: 20px;
+}
+.social-icon{
+    margin: 100px;
+}
+.social-icon svg:hover{
+    fill: aquamarine;
+}
+
+.example{
+    display: flex;
+    justify-content: space-evenly;
+}

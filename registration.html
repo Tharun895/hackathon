@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon Registration</title>
+    <link rel="stylesheet" href="C:\Users\HP\Desktop\drab.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Hackathon Registration</h2>
+        <form id="registrationForm" action="registration.html" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="roll">College ID:</label>
+            <input type="text" id="roll" name="roll" required>
+
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the <a href="terms_and_conditions.html" target="_blank">terms and conditions</a>.</label>
+
+            <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
